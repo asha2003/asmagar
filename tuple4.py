@@ -1,2 +1,9 @@
-tup2 = (1, 2, 3, 4, 5, 6, 7 )
-print ("tup2[1:5]: ", tup2[1:5])
+from copy import deepcopy
+#create a tuple
+tuplex = ("HELLO", 5, [], True)
+print(tuplex)
+#make a copy of a tuple using deepcopy() function
+tuplex_colon = deepcopy(tuplex)
+tuplex_colon[2].append(50)
+print(tuplex_colon)
+print(tuplex)
