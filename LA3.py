@@ -1,7 +1,13 @@
-import numpy as np
-X = np.array([[ 5, 1 ,3], [ 1, 1 ,1], [ 1, 2 ,1]])
+X = [[ 5, 1 ,3], [ 1, 1 ,1], [ 1, 2 ,1]]
 
-Y=np.array([1, 2, 3])
+Y=[1, 2, 3]
 
-print(X.dot(Y))
+result=[]
+val = 0
+for i in range(len(X)):
+    for j in range(len(X[0])):
+        val+=X[i][j]*Y[j]
+    result.append(val)
+print(result)
+'''print(X.dot(Y))'''
 
